@@ -5,12 +5,12 @@ Python is a computer programming language often used to build websites and softw
 The name Python comes from Monty Python. When Guido van Rossum was creating Python, he was also reading the scripts from BBC’s Monty Python’s Flying Circus. He thought the name Python was appropriately short and slightly mysterious
 
 # What can you do with Python?
-	*Data analysis and machine learning*
+*Data analysis and machine learning*
 
-	*Web development*
+*Web development*
 
-	*Automation or scripting*
+*Automation or scripting*
 
-	*Software testing and prototyping*
+*Software testing and prototyping*
 
-	*Everyday tasks*
+*Everyday tasks*
