@@ -7,10 +7,11 @@ if __name__ == "__main__":
         sys.exit(1)
 
     operations = {'+': add, '-': sub, '*': mul, '/': div}
-    if sys.argv[2] not in list(operations.keys()):
+    arg_2 = sys.argv[2]
+    if arg_2 not in list(operations.keys()):
         print("Unknown operator. Available operators: +, -, * and /")
         sys.exit(1)
 
     a = int(sys.argv[1])
     b = int(sys.argv[3])
-    print("{} {} {} = {}".format(a, sys.argv[2], b, operations[sys.argv[2]](a, b)))
+    print("{} {} {} = {}".format(a, arg_2, b, operations[arg_2](a, b)))
