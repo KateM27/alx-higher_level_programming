@@ -9,8 +9,7 @@ def roman_to_int(roman_string):
                 'L': 50,
                 'C': 100,
                 'D': 500,
-                'M': 1000
-        }
+                'M': 1000}
     rom_sum = 0
     conv_dict = roman_string[::-1]
     max_str = 'I'
@@ -22,4 +21,3 @@ def roman_to_int(roman_string):
         else:
             rom_sum -= rom_dict[i]
     return rom_sum
-
