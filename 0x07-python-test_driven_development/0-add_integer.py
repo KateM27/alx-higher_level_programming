@@ -1,9 +1,8 @@
-#!/usr/bin/python3 
-"""
-This is the 0-add_integer module.
-It contains a function add_integer that adds two integers.
+#!/usr/bin/python3
+"""This is the 0-add_integer module.
+It contains a function add_integer that adds two integers"""
 
-"""
+
 def add_integer(a, b=98):
     """Returns the addition of two numbers"""
     if type(a) is not int and type(a) is not float:
