@@ -9,19 +9,20 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-        if attrs is None:
-            return self.__dict__
-        n_dict = {}
-        for i in n_dict:
-            try:
-                n_dict[i] = self.__dict__[i]
-            except:
-                pass
-        return n_dict
+        c_dict = self.__dict__
+        n_dict = dict()
+
+        if type(attrs) is list:
+            for a in attrs:
+                if type(a) is not str:
+                    return c_dict
+
+                if a in c_dict:
+                    n_dict[a] = c_dict[a]
+                return n_dict
+            return c_dict
 
     def reload_from_json(self, json):
-        for k in json:
-            try:
-                attr(self, k, json[k])
-            except:
-                pass
+        for d in json:
+            if d in self.__dict__.keys():
+                self.__dict__[d] = json[d]
