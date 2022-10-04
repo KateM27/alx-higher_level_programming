@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""class Square which inherits from Rectangle"""
+"""class Square which inherits from Rectangle
+a square is a rectangle with same width and height"""
 
 
 from models.rectangle import Rectangle
@@ -7,10 +8,12 @@ from models.rectangle import Rectangle
 
 class Square(Rectangle):
     def __init__(self, size, x=0, y=0, id=None):
+        """init of attributes inherited from class Rectangle"""
         super().__init__(size, size, x, y, id)
         self.size = size
 
     def __str__(self):
+        """overloading the string method"""
         return [Square]({}), {}/{} - {}.format(self.id, self.x,
                                                self.y, self.width)
 
@@ -49,7 +52,7 @@ class Square(Rectangle):
                 self.y = kwargs["y"]
 
     def to_dictionary(self):
-        """dictionary rep of a square"""
+        """dictionary representation of a square"""
         dct = {}
         dct["id"] = self.id
         dct["size"] = self.size
