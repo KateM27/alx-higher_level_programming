@@ -1,7 +1,6 @@
 #!/usr/bin/node
 function add(a, b) {
-    sum = a + b;
-    return sum
+    return a + b;
 }
 
 const args = process.argv;
